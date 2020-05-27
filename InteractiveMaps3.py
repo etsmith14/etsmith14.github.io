@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
 import pandas as pd
+import os
 
 df = pd.read_excel(
     "https://github.com/chris1610/pbpython/blob/master/data/salesfunnel.xlsx?raw=True"
@@ -10,7 +11,7 @@ df = pd.read_excel(
 mgr_options = df["Manager"].unique()
 
 app = dash.Dash()
-
+port = int(os.environ.get("PORT", 5000))
 app.layout = html.Div([
     html.H2("Sales Funnel Report"),
     html.Div(
@@ -61,4 +62,6 @@ def update_graph(Manager):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=False,host="0.0.0.0",port=port)
+    
+
