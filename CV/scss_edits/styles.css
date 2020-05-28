@@ -6097,7 +6097,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #343a40 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6225,7 +6225,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #bd5d38 !important;
+  border-color: #343a40 !important;
 }
 
 .border-secondary {
@@ -9799,7 +9799,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: #343a40 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
