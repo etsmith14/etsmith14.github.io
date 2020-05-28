@@ -1,2 +1,7 @@
-@use './src/scss/_variables';
+@use "./variables.scss";
+@use "bootstrap/scss/bootstrap.scss";
+@use "./global.scss";
+@use "./components/sidenav.scss";
+@use "./components/icons.scss";
+@use "./sections/resume-section.scss";
 /*# sourceMappingURL=styles.css.map */
