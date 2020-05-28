@@ -1,11 +1,11 @@
 // Import variables
-@import "./_variables.scss";
+@import "./variables.scss";
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
 // Global CSS
-@import "./_global.scss";
+@import "./global.scss";
 
 // Components
 @import "./components/sidenav.scss";
