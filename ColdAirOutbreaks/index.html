@@ -45,13 +45,23 @@ $('.carousel-indicators li').on('click', function() {
 
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: blue;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   position: relative;
-  margin-left: 50%;
+  margin-left: -50%;
+}
+
+.dropbtn2 {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  margin-left: -50%;
 }
 
 .dropdown {
@@ -133,6 +143,20 @@ $('.carousel-indicators li').on('click', function() {
             <a data-target="#myCarousel" data-slide-to="6" href="#">Regions</a>
           </div>
         </div>
+
+                <!-- Drop Down 2 -->
+                <div class="dropdown">
+                  <button class="dropbtn2">NNR</button>
+                  <div class="dropdown-content">
+                    <a data-target="#myCarouse2" data-slide-to="0" href="#">CAO Days</a>
+                    <a data-target="#myCarouse2" data-slide-to="1" href="#">Slope</a>
+                    <a data-target="#myCarouse2" data-slide-to="2" href="#">% Change</a>
+                    <a data-target="#myCarouse2" data-slide-to="3" href="#">Max Duration</a>
+                    <a data-target="#myCarouse2" data-slide-to="4" href="#">Mean Duration</a>
+                    <a data-target="#myCarouse2" data-slide-to="5" href="#">Magnitude Slope</a>
+                    <a data-target="#myCarouse2" data-slide-to="6" href="#">Regions</a>
+                  </div>
+                </div>
 
         
         <!-- Indicators -->
