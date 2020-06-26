@@ -115,23 +115,26 @@ $('.carousel-indicators li').on('click', function() {
 </nav>
 
 
-<div class="dropdown">
-  <button class="dropbtn">ERA5</button>
-  <div class="dropdown-content">
-    <a data-target="#myCarousel" data-slide-to="0" href="#">CAO Days</a>
-    <a data-target="#myCarousel" data-slide-to="1" href="#">Slope</a>
-    <a data-target="#myCarousel" data-slide-to="2" href="#">% Change</a>
-    <a data-target="#myCarousel" data-slide-to="3" href="#">Max Duration</a>
-    <a data-target="#myCarousel" data-slide-to="4" href="#">Mean Duration</a>
-    <a data-target="#myCarousel" data-slide-to="5" href="#">Magnitude Slope</a>
-    <a data-target="#myCarousel" data-slide-to="6" href="#">Regions</a>
-  </div>
-</div>
-
 
     <div class = container>
       <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Drop Down -->
+        <div class="dropdown">
+          <button class="dropbtn">ERA5</button>
+          <div class="dropdown-content">
+            <a data-target="#myCarousel" data-slide-to="0" href="#">CAO Days</a>
+            <a data-target="#myCarousel" data-slide-to="1" href="#">Slope</a>
+            <a data-target="#myCarousel" data-slide-to="2" href="#">% Change</a>
+            <a data-target="#myCarousel" data-slide-to="3" href="#">Max Duration</a>
+            <a data-target="#myCarousel" data-slide-to="4" href="#">Mean Duration</a>
+            <a data-target="#myCarousel" data-slide-to="5" href="#">Magnitude Slope</a>
+            <a data-target="#myCarousel" data-slide-to="6" href="#">Regions</a>
+          </div>
+        </div>
+
+        
         <!-- Indicators -->
         <ol class="carousel-indicators" style="color:black">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
