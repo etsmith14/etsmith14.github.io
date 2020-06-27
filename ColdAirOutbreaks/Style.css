@@ -6,10 +6,10 @@
       width: 70%;
       margin: auto;
     }
-    .carousel-control{
-        background-image:none !important;
-        filter:none !important;
-     }
+    .carousel-control.left,
+    .carousel-control.right {
+      background-image: none;
+    }
   
    .carousel-caption{
       position: relative;
