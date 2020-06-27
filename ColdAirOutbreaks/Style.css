@@ -7,8 +7,8 @@
       margin: auto;
     }
 
-    .glyphicon-chevron-right, .glyphicon-chevron-left{
-      color: black;
+    .carousel-control-next-icon {
+      background-color: black;
 
     }
   
