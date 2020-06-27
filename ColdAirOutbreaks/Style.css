@@ -5,11 +5,11 @@
     .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
-      background-color: black;
     }
-    .carousel-control-prev{
-      background-color: black;
-    }
+    .carousel-control{
+        background-image:none !important;
+        filter:none !important;
+     }
   
    .carousel-caption{
       position: relative;
