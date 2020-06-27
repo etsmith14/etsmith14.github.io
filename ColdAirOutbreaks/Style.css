@@ -1,4 +1,6 @@
-
+ /*Styling for ColdAirOutbreaks index.html*/
+ 
+  /*Carousel Styling*/
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       width: 70%;
@@ -25,7 +27,7 @@
   
   
   
-  
+  /*Dropdown*/
   .dropbtn {
     background-color: #191970;
     color: white;
