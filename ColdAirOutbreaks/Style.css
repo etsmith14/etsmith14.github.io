@@ -5,10 +5,10 @@
     .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
-      background-color: grey;
+      background-color: black;
     }
-    .carousel-control-prev-icon {
-      background-color: grey;
+    .carousel-control-prev{
+      background-color: black;
     }
   
    .carousel-caption{
