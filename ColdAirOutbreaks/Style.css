@@ -7,6 +7,9 @@
       margin: auto;
       background-color: grey;
     }
+    .carousel-control-prev-icon {
+      background-color: grey;
+    }
   
    .carousel-caption{
       position: relative;
