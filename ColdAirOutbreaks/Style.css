@@ -1,5 +1,10 @@
  /*Styling for ColdAirOutbreaks index.html*/
 
+ .jumbotron{
+  background-image: url("images/ERA5_CAOdays.png");
+  background-size: cover;
+}
+
   /*Carousel Styling*/
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
