@@ -62,7 +62,8 @@ $('.carousel-indicators li').on('click', function() {
 
         <!-- Drop Down -->
         <div class="dropdown">
-          <button class="dropbtn">AO</button>
+          <button class="dropbtn">Teleconnections</button>
+          <span class="caret"></span></button>
           <div class="dropdown-content">
             <a data-target="#myCarousel" data-slide-to="0" href="#">November</a>
             <a data-target="#myCarousel" data-slide-to="1" href="images/18.png">December</a>
@@ -72,10 +73,37 @@ $('.carousel-indicators li').on('click', function() {
           </div>
         </div>
 
+                                      
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">HTML</a></li>
+              <li><a tabindex="-1" href="#">CSS</a></li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">3rd level dropdown</a></li>
+                      <li><a href="#">3rd level dropdown</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
 
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <br>
+
+          
         <!-- Indicators -->
         <ol class="carousel-indicators" style="color:black">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
