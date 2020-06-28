@@ -25,9 +25,11 @@
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
+    });
+  });
 
-              // Closes the menu in the event of outside click 
-              window.onclick = function(event) { 
+                // Closes the menu in the event of outside click 
+                window.onclick = function(event) { 
             if (!event.target.matches('.dropbutton')) { 
               
                 var dropdowns =  
@@ -42,8 +44,6 @@
                 } 
             } 
         } 
-    });
-  });
   </script>
 
   <script>
