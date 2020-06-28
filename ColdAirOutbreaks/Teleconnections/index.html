@@ -31,7 +31,7 @@
   $(document).on("click", function(event){
         var $trigger = $(".dropdown-submenu");
         if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".dropdown-submenu").slideUp("slow");
+            $(".dropdown-submenu").slideToggle("slow");
         } 
   }
   </script>
