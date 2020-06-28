@@ -28,22 +28,12 @@
     });
   });
 
-                // Closes the menu in the event of outside click 
-                window.onclick = function(event) { 
-            if (!event.target.matches('.dropdown-submenu')) { 
-              
-                var dropdowns =  
-                document.getElementsByClassName("dropdown-submenu"); 
-                  
-                var i; 
-                for (i = 0; i < dropdowns.length; i++) { 
-                    var openDropdown = dropdowns[i]; 
-                    if (openDropdown.classList.contains('show')) { 
-                        openDropdown.classList.remove('show'); 
-                    } 
-                } 
-            } 
+  $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-submenu").slideUp("fast");
         } 
+  }
   </script>
 
   <script>
