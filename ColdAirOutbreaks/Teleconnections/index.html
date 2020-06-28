@@ -17,6 +17,16 @@
       gtag('js', new Date());
       gtag('config', 'UA-170607978-1');
   </script>
+  
+  <script>
+  $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
 
   <script>
 $('.carousel-indicators li').on('click', function() {
@@ -75,7 +85,7 @@ $('.carousel-indicators li').on('click', function() {
 
                                       
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Teleconnections
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
               <a data-target="#myCarousel" data-slide-to="0" href="#">November</a>
