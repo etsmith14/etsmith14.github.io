@@ -28,7 +28,10 @@
     });
   });
 
-
+  $('ul.dropdown-submenu', view).find('li').click(function () {
+            // remove the 'open' class on the parent element 
+            $(this).parents('.dropdown-submenu').parent().removeClass('open');
+        });
   </script>
 
   <script>
