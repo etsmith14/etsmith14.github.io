@@ -20,21 +20,11 @@
   
   <!--Dropdown menu-->
   <script>
-  $(document).ready(function(){
-    $('.dropdown-submenu a.test').on("click", function(e){
-      $(this).next('ul').toggle();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-  });
 
-  $('ul.dropdown-submenu', view).find('li').click(function () {
-            // remove the 'open' class on the parent element 
-            $(this).parents('.dropdown-submenu').parent().removeClass('open');
-        });
-  </script>
 
-  <script>
+
+
+  
 $('.carousel-indicators li').on('click', function() {
   $('.carousel').carousel(parseInt(this.getAttribute('data-to')));
 });
