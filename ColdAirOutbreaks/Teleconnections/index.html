@@ -21,7 +21,7 @@
   <!--Dropdown menu-->
   <script>
   $(document).ready(function(){
-    $('.dropdown-submenu a.test').on("click", function(e){
+    $('.dropdown-menu .dropdown-submenu a.test').on("click", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
@@ -29,9 +29,9 @@
   });
 
 
-  $('.dropdown-submenu').on("hidden.bs.dropdown", function() {
+  $('.dropdown-menu').on("hidden.bs.dropdown", function() {
     // hide any open menus when parent closes
-    $('.dropdown-submenu.show').removeClass('show');
+    $('.dropdown-menu.show').removeClass('show');
   });
 
   
