@@ -21,17 +21,14 @@
   <!--Dropdown menu-->
   <script>
   $(document).ready(function(){
-    $('.dropdown .dropdown-menu a.test').on("click", function(e){
+    $('.dropdown-menu a.test').on("click", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
       e.preventDefault();
     });
   });
 
-  $('.dropdown-menu .dropdown').on("hidden.bs.dropdown", function() {
-    // hide any open menus when parent closes
-    $('.multi-level-dropdown .dropdown-menu.show').removeClass('show');
-  });
+
 
   
 $('.carousel-indicators li').on('click', function() {
