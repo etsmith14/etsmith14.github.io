@@ -66,12 +66,17 @@ $('.carousel-indicators li').on('click', function() {
     <button class="dropbtn">Figures</button>
     <div class="dropdown-content">
       <a data-target="#myCarousel" data-slide-to="0" href="#">All-Cause Mortality</a>
-      <a data-target="#myCarousel" data-slide-to="1" href="#">Change in CAO Days</a>
-      <a data-target="#myCarousel" data-slide-to="2" href="#">Change in CAO Days (%)</a>
-      <a data-target="#myCarousel" data-slide-to="3" href="#">Change in CAO Max Duration</a>
-      <a data-target="#myCarousel" data-slide-to="4" href="#">Change in CAO Mean Duration</a>
-      <a data-target="#myCarousel" data-slide-to="5" href="#">Change in CAO Magnitude</a>
-      <a data-target="#myCarousel" data-slide-to="6" href="#">Regions</a>
+      <a data-target="#myCarousel" data-slide-to="1" href="#">Early season ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="2" href="#">Late season ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="3" href="#">Short duration ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="4" href="#">Long duration ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="5" href="#">Less extreme ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">More extreme ECEs & mortality</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">Mortality for people > 64</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">Early season ECEs & mortality for people > 64</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">Atlanta Cumulative Risk</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">Atlanta Daily Risk</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">All cities</a>
     </div>
   </div>
 
@@ -89,6 +94,11 @@ $('.carousel-indicators li').on('click', function() {
     <li data-target="#myCarousel" data-slide-to="4"></li>
     <li data-target="#myCarousel" data-slide-to="5"></li>
     <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+    <li data-target="#myCarousel" data-slide-to="8"></li>
+    <li data-target="#myCarousel" data-slide-to="9"></li>
+    <li data-target="#myCarousel" data-slide-to="10"></li>
+    <li data-target="#myCarousel" data-slide-to="11"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -97,49 +107,85 @@ $('.carousel-indicators li').on('click', function() {
     <div class="item active">
       <img src="images/All_mortality.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>All-cause mortality</h3>
+        <h3>Relative risk of increased mortality during all ECEs</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/ERA5_slope.png" alt="ERA5" width="460" height="345">
+      <img src="images/early.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Change in Mean Annual CAO Days</h3>
+        <h3>Relative risk of increased mortality during early season ECEs</h3>
       </div>
     </div>
   
     <div class="item">
-      <img src="images/ERA5_percent_change.png" alt="ERA5" width="460" height="345">
+      <img src="images/late.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Percent Change in Mean Annual CAO Days</h3>
+        <h3>Relative risk of increased mortality during late season ECEs</h3>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="images/durationless8.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>Relative risk of increased mortality during short duration ECEs (less than 8 days)</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/ERA5_max_slope.png" alt="ERA5" width="460" height="345">
+      <img src="images/durationmore8.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Change in Max CAO Duration</h3>
+        <h3>Relative risk of increased mortality during long duration ECEs (more than 8 days)</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/ERA5_mean_slope.png" alt="ERA5" width="460" height="345">
+      <img src="images/low_mag.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Change in Mean CAO Duration</h3>
+        <h3>Relative risk of increased mortality during less extreme ECEs</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/ERA5_z_slope.png" alt="ERA5" width="460" height="345">
+      <img src="images/high_mag.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Change in CAO Magnitude</h3>
+        <h3>Relative risk of increased mortality during more extreme ECEs</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/ERA5_regions.png" alt="ERA5" width="460" height="345">
+      <img src="images/Mortality64.png" alt="ERA5" width="460" height="345">
       <div class="carousel-caption">
-        <h3>ERA5 - Regions</h3>
+        <h3>Relative risk of increased mortality during all ECEs for individuals older than 64</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/early64.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>Relative risk of increased mortality during early season ECEs for individuals older than 64</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/atl_cum.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>Cumulative relative risk of increased mortality following the onset of an ECE in Atlanta</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/atl_daily.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>Daily relative risk of increased mortality following the onset of an ECE in Atlanta</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/Mortality.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>Relative risk of increased mortality for all cities and categories</h3>
       </div>
     </div>
 
@@ -161,7 +207,7 @@ $('.carousel-indicators li').on('click', function() {
 
 
 <div class = container>
-  <h3>What is a Cold Air Outbreak?</h3>
+  <h3>How does extreme cold impact human health?</h3>
     <p class="mb-2">Cold Air Outbreaks (CAOs) are extreme events with potentially large impacts on <a href="https://etsmith14.github.io/ColdAirOutbreaks/Mortality/index.html">HUMAN HEALTH</a>, animals, agriculture, energy industry, etc. They are characterized by a large area of extreme cold that persists for multiple days.  </p>
   <h3>Project Overview</h3>
       <p class="mb-2">This study uses a set of criteria to examine CAOs across the globe from 1979–2018 and to determine how CAOs
