@@ -5,9 +5,6 @@
   background-size: cover;
 }
 
-img {
-  float: right;
-}
 
 /*Carousel Styling*/
 .carousel-inner > .item > img,
