@@ -58,7 +58,120 @@ $('.carousel-indicators li').on('click', function() {
 
 
 
-<div class="image"></div>
+
+<div class = container>
+
+  <!-- Drop Down -->
+  <div class="dropdown">
+    <button class="dropbtn">Figures</button>
+    <div class="dropdown-content">
+      <a data-target="#myCarousel" data-slide-to="0" href="#">All-Cause Mortality</a>
+      <a data-target="#myCarousel" data-slide-to="1" href="#">Change in CAO Days</a>
+      <a data-target="#myCarousel" data-slide-to="2" href="#">Change in CAO Days (%)</a>
+      <a data-target="#myCarousel" data-slide-to="3" href="#">Change in CAO Max Duration</a>
+      <a data-target="#myCarousel" data-slide-to="4" href="#">Change in CAO Mean Duration</a>
+      <a data-target="#myCarousel" data-slide-to="5" href="#">Change in CAO Magnitude</a>
+      <a data-target="#myCarousel" data-slide-to="6" href="#">Regions</a>
+    </div>
+  </div>
+
+
+
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <br>
+  <!-- Indicators -->
+  <ol class="carousel-indicators" style="color:black">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <img src="images/All_mortality.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>All-cause mortality</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/ERA5_slope.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Change in Mean Annual CAO Days</h3>
+      </div>
+    </div>
+  
+    <div class="item">
+      <img src="images/ERA5_percent_change.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Percent Change in Mean Annual CAO Days</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/ERA5_max_slope.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Change in Max CAO Duration</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/ERA5_mean_slope.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Change in Mean CAO Duration</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/ERA5_z_slope.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Change in CAO Magnitude</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/ERA5_regions.png" alt="ERA5" width="460" height="345">
+      <div class="carousel-caption">
+        <h3>ERA5 - Regions</h3>
+      </div>
+    </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="[id*=myCarousel]" role="button" data-slide="prev" style="background: none">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="background-color: black"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="[id*=myCarousel]" role="button" data-slide="next" style="background: none">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="background-color: black"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+  </div>
+
+</div>
+
+
+
+
+<div class = container>
+  <h3>What is a Cold Air Outbreak?</h3>
+    <p class="mb-2">Cold Air Outbreaks (CAOs) are extreme events with potentially large impacts on <a href="https://etsmith14.github.io/ColdAirOutbreaks/Mortality/index.html">HUMAN HEALTH</a>, animals, agriculture, energy industry, etc. They are characterized by a large area of extreme cold that persists for multiple days.  </p>
+  <h3>Project Overview</h3>
+      <p class="mb-2">This study uses a set of criteria to examine CAOs across the globe from 1979–2018 and to determine how CAOs
+         have changed over the last 40 years. We found that CAOs occur most frequently in the Northern Hemisphere, with as many as
+          eight CAO days per year in North America and Eurasia. CAOs were found to have decreased in size, intensity, frequency, and
+           duration across much of the globe, with the largest decreases in Alaska, Canada, and the North Atlantic, while an increase
+            in CAOs was observed in Eastern Europe, Central Eurasia, and the Southern Ocean. Early and late winter CAOs have also become
+             much less frequent in most regions. For more information, check out the <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL086983">ARTICLE</a></p>
+ </div>
+
 
 
 
