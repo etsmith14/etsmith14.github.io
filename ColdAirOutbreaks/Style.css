@@ -92,4 +92,6 @@
     padding: 3px;
     background-color: #2e2e2e;
     color: white;
+    float: left;
+   width: 100%;
   }
