@@ -50,11 +50,11 @@
   
   /*Dropdown*/
   .dropbtn {
-    background-color: #191970;
-    color: white;
+    background-color: #bebebe;
+    color: black;
     padding: 16px;
     font-size: 16px;
-    width: 100px;
+    width: 150px;
     border: none;
     position: relative;
   }
