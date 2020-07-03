@@ -87,4 +87,9 @@
   .dropdown:hover .dropbtn2 {background-color: #191970; color: white}
 
   
-    
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #2e2e2e;
+    color: white;
+  }
