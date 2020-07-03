@@ -59,7 +59,7 @@
     position: relative;
   }
   
-  .dropbtn2 {
+  .btn .btn-default .dropdown-toggle{
     background-color: #191970;
     color: white;
     padding: 16px;
