@@ -83,8 +83,8 @@
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #191970;}
-  .dropdown:hover .dropbtn2 {background-color: #191970;}
+  .dropdown:hover .dropbtn {background-color: #191970; color: white}
+  .dropdown:hover .dropbtn2 {background-color: #191970; color: white}
 
   
     
