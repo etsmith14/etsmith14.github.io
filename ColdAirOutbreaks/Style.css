@@ -39,22 +39,21 @@
   
   /*Dropdown*/
   .dropbtn {
-    background-color: #191970;
+    background-color: #bebebe;
     color: white;
     padding: 16px;
     font-size: 16px;
     width: 100px;
-    border: none;
+
     position: relative;
   }
   
   .dropbtn2 {
-    background-color: #191970;
+    background-color: #bebebe;
     color: white;
     padding: 16px;
     font-size: 16px;
     width: 100px;
-    border: none;
     position: relative;
   }
   
@@ -84,6 +83,8 @@
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #191970;}
+  .dropdown:hover .dropbtn2 {background-color: #191970;}
+
   
     
